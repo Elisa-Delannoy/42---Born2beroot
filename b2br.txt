@@ -1,0 +1,71 @@
+Le fonctionnement basique de sa machine virtuelle
+
+Son choix de système d'exploitation
+	Plus facile à installer et à configurer, donc meilleur pour les serveurs personnels.
+
+Les différences basiques entre Rocky et Debian :
+	-Debian conseillé pour les débutants, robustesse, sa stabilité et ses énormes 
+	dépôts de logiciels, ce qui en fait une option polyvalente pour diverses applications serveur, permet aux utilisateurs de personnaliser de nombreux paramètres et fonctions. En comparaison de ses performances, le système d’exploitation reste très léger et ne demande que peu de mémoire.
+
+
+	-Rocky est davantage conseillé pour les entreprises, faible retour d experience
+
+L'intérêt des machines virtuelles
+
+	Efficacité des ressources, rapidite
+ 
+
+la différence entre aptitude et apt 
+	-aptitude est une interface en mode texte pour le gestionnaire de paquets de Debian.  il propose une interface plus interactive et plus complète, simplifier la gestion des paquets., meilleure resolutiion de conflits de dépendance
+	(Un gestionnaire de paquets garde la trace des programmes installés sur votre ordinateur. Il facilite l'installation de nouveaux programmes, la mise à jour ou la suppression de ceux que vous aviez précédemment installés.
+
+
+	-APT (Advanced Package Tool) comme système de gestion des paquets. APT permet d'installer, de mettre à jour et de supprimer facilement des logiciels via des dépôts en ligne.
+	La gestion des paquets dans Debian (et dans de nombreuses distributions Linux) est un processus qui permet d'installer, de mettre à jour, de supprimer et de gérer les logiciels sur le système de manière centralisée et efficace.
+Un paquet est une archive qui contient des fichiers nécessaires pour installer un logiciel, ainsi que des informations sur la version, les dépendances, les configurations et les instructions d'installation
+	
+et ce qu'est APPArmor
+	-est un système de sécurité pour les systèmes Linux qui permet de limiter les actions des pr
+ogrammes en définissant des profils de sécurité aux programmes
+
+
+demandez à la personne évaluée de vous exposer l'intérêt
+de cette politique de mot de passe, ainsi que les avantages et les
+inconvénients de sa mise en place
+
+
+Cette partie est l'occasion de discuter des partitions ! La personne
+évaluée doit vous donner une petite explication sur le fonctionnement
+et l'intérêt de LVM.
+	Un volume logique (LV) dans le cadre de LVM (Logical Volume Management) est une unité de stockage virtuelle créée à partir d'un ou plusieurs groupes de volumes (VG). 
+
+	-Logical Volume Management est un système de gestion des volumes logiques sous Linux qui permet de mieux gérer l'espace de stockage en offrant une plus grande flexibilité par rapport aux partitions traditionnelles.
+	agit comme une couche d'abstraction entre les partitions physiques et le système de fichiers
+	Intéret : Flexibilité dans la gestion de l'espace disque (redimensionnement, ajout de nouveaux disques) amélioration des performances et faciloté de gestion
+	L'intérêt principal de LVM réside dans sa capacité à rendre la gestion du stockage plus flexible et plus dynamique
+
+La personne évaluée doit vous expliquer basiquement ce qu'est UFW (ou "Firewalld") et l'intérêt de l'utiliser
+	solutions de gestion de pare-feu.  contrôler le trafic réseau entrant et sortant en fonction de règles spécifiques, afin de protéger un serveur ou un poste de travail contre les attaques extérieures et d'assurer la sécurité du système.
+	Uncomplicated Firewall UFW permet de définir des règles pour autoriser ou bloquer des connexions réseau à un serveur, en fonction des adresses IP, des ports ou des protocoles.
+	Intéret : simplicité utilistion, configuration rapide, sécurité par défaut
+	Protection contre les attaques réseau, Gestion des services accessibles
+
+La personne évaluée doit vous expliquer basiquement ce qu'est SSH et l'intérêt de l'utiliser
+	SSH (pour Secure Shell) est un protocole de communication sécurisé qui permet de se connecter à un autre ordinateur à travers un réseau de manière sécurisée.
+	Intéret = Sécurisation des connexions à distance, Accès à des systèmes distants de manière sécurisée, Authentification par clé publique/privée
+
+
+
+expliquer l'intérêt et le fonctionnement de sudo par des exemples de son choix.
+	SuperUser DO = En utilisant sudo, vous pouvez exécuter une commande en tant que superutilisateur uniquement lorsque c'est nécessaire, ce qui réduit les risques i/o etre connecte en tant qu utilisatier root tout le temps car dangereux
+	permet de limiter l'accès aux privilèges administratifs tout en permettant de les utiliser lorsque cela est nécessaire. Cela contribue à la sécurité du système en minimisant les risques d'erreurs fatales en tant qu'utilisateur normal.
+
+
+Ce qu'est "cron"
+utilitaire sous Linux et Unix qui permet de planifier l'exécution de tâches ou de commandes à des moments précis dans le temps. Il permet d'automatiser des tâches récurrentes comme des sauvegardes, des mises à jour, ou l'envoi de rapports, sans nécessiter d'intervention manuelle
+
+
+
+
+cc -Wall -Wextra -Werror main.c -L. -lftprintf -o a.out 
+
